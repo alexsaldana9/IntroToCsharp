@@ -1,0 +1,6 @@
+C:\Users\asaldana\Documents\C_sharp_Fundamentals\IntroToCSharp\IntroToCSharp\bin\Debug\IntroToCSharp.exe.config
+C:\Users\asaldana\Documents\C_sharp_Fundamentals\IntroToCSharp\IntroToCSharp\bin\Debug\IntroToCSharp.exe
+C:\Users\asaldana\Documents\C_sharp_Fundamentals\IntroToCSharp\IntroToCSharp\bin\Debug\IntroToCSharp.pdb
+C:\Users\asaldana\Documents\C_sharp_Fundamentals\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp.csprojResolveAssemblyReference.cache
+C:\Users\asaldana\Documents\C_sharp_Fundamentals\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp.exe
+C:\Users\asaldana\Documents\C_sharp_Fundamentals\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp.pdb
