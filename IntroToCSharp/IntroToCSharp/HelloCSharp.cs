@@ -8,6 +8,141 @@ namespace IntroToCSharp
 {
     class HelloCSharp
     {
+
+        // Chapter - Methods p347
+
+        static void greetings(string name)
+        {
+            Console.WriteLine("Hello {0}, good day", name);
+        }
+
+
+        static void GetMax(int number1, int number2, int number3)
+        {
+
+            if (number1 > number2 && number1 > number3)
+            {
+                Console.WriteLine("Max number is {0}", number1);
+            }
+
+            if (number2 > number1 && number2 > number3)
+            {
+                Console.WriteLine("Max number is {0}", number2); ;
+            }
+
+            if (number3 > number1 && number3 > number2)
+            {
+                Console.WriteLine("Max number is {0}", number3); ;
+            }
+
+
+            //int temp = number1;
+
+            //if (temp > number2)
+            //{
+            //    if (temp > number3)
+            //    {
+            //        Console.WriteLine("Max number is {0}", number1);
+            //    }
+
+            //    if (temp < number2 )
+            //    {
+            //        temp = number2;
+
+            //        if ( temp > number3)
+            //        {
+            //            Console.WriteLine("Max number is {0}", number2);
+            //        }
+
+            //        if (temp < number3)
+            //        {
+            //            Console.WriteLine("Max number is { 0 }", number3);
+            //        }
+            //    }
+            //}
+        }
+
+        static string getLastDigit(int number)
+        {
+            int lastDigit = number % 10;
+
+            string numberString;
+
+            switch (lastDigit)
+            {
+                case 1:
+                    numberString = "one";
+                    break;
+                case 2:
+                    numberString = "two";
+                    break;
+                case 3:
+                    numberString = "three";
+                    break;
+                case 4:
+                    numberString = "four";
+                    break;
+                case 5:
+                    numberString = "five";
+                    break;
+                case 6:
+                    numberString = "six";
+                    break;
+                case 7:
+                    numberString = "seven";
+                    break;
+                case 8:
+                    numberString = "eight";
+                    break;
+                case 9:
+                    numberString = "nine";
+                    break;
+                case 0:
+                    numberString = "zero";
+                    break;
+                default:
+                    Console.WriteLine("Invalid !");
+                    return null;
+            }
+            return numberString;
+        }
+
+        static int countNum(int[] arrayPassed, int number)
+        {
+            int count = 0;
+
+            for (int i = 0; i < arrayPassed.Length; i++)
+            {
+              
+                if (number == arrayPassed[i])
+                {
+                    count = count + 1;
+                }
+            }
+            return count;
+        }
+
+        static string compareNum(int[] arrayPassed, int position)
+        {
+            int lengthArray = arrayPassed.Length;
+            int positioninArray = position - 1;
+
+            if (arrayPassed[positioninArray + 1] <= lengthArray)
+            {
+                if (arrayPassed[positioninArray] > arrayPassed[positioninArray + 1] && arrayPassed[positioninArray] > arrayPassed[positioninArray - 1])
+                {
+                    return "greater than both neighborhs";
+                }
+                else
+                {
+                    return "number is smaller than neighbors";
+                }
+            }
+
+            return "out of bounce";
+        }
+
+
         static void Main(string[] args)
         {
             // Chapter 1
@@ -286,22 +421,382 @@ namespace IntroToCSharp
             //}
 
             // Chapter 6
+            //Console.WriteLine(" Chapter 6 - p. 231");
+            //Console.WriteLine("Write a program that prints on the console the numbers from 1 to N. The number N should be read from the standard input.");
 
-            Console.WriteLine("Write a program that prints on the console the numbers from 1 to N. The number N should be read from the standard input.");
+            //string val;
+            //Console.Write("Enter integer: ");
+            //val = Console.ReadLine();
 
-            Console.WriteLine("Enter number: ");
-            int number = int.Parse(Console.ReadLine());
+            //int number = Convert.ToInt32(val);
+            //Console.WriteLine("Your input: {0}", number);
 
-            int counter = 1;
+            //int counter = 1;
 
-            while (counter <= number)
-            {
-                Console.WriteLine(counter);
-                counter++;
-            }
+            //while (counter <= number)
+            //{
+            //    Console.WriteLine(counter);
+            //    counter++;
+            //}
+
+
+            //Console.WriteLine("Write a program that prints on the console the numbers from 1 to N, which are not divisible by 3 and 7 simultaneously.The number N should be read from the standard input.");
+
+            //string val;
+            //Console.Write("Enter integer: ");
+            //val = Console.ReadLine();
+
+            //int number = Convert.ToInt32(val);
+            //Console.WriteLine("Your input: {0}", number);
+
+            //int counter = 1;
+
+            //while (counter < number)
+            //{
+
+            //    if ((counter % 3 == 0) && (counter % 7 == 0))
+            //    {
+            //        Console.WriteLine("Number is divisible by 7 and 3: {0}", counter);
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Number is NOT !!!!!!!!!divisible by 7 and 3: {0}", counter);
+            //    }
+
+            //    counter++;
+            //}
+
+
+
+
+            //Console.WriteLine("Write a program that reads from the console a series of integers and prints the smallest and largest of them.");
+
+            //string value;
+            //string answer;
+
+            //var numberList = new List<int>();
+
+            //int largestNum;
+
+            //Console.Write("Would you like to enter numbers? Y or N");
+            //answer = Console.ReadLine();
+
+            //while (answer.Contains("Y"))
+            //{
+            //    Console.Write("Enter integer: ");
+            //    value = Console.ReadLine();
+
+            //    int number = Convert.ToInt32(value);
+
+            //    numberList.Add(number);
+
+
+            //    Console.Write("Would you like to enter numbers? Y or N");
+            //    answer = Console.ReadLine();
+
+            //}
+
+
+            //numberList.Sort();
+
+            //Console.WriteLine("here is the list: ");
+
+            //foreach (int num in numberList)
+            //{
+            //    System.Console.WriteLine(num);
+            //}
+
+            //largestNum = numberList.Capacity - 1;
+
+
+            //Console.WriteLine("total in list {0}", numberList.Capacity);
+
+            //Console.WriteLine("Here is the smallest number : {0}", numberList[0]);
+
+            //Console.WriteLine("Largest number: {0}", numberList[largestNum]);
+
+            //Console.WriteLine("Thanks for playing");
+
+
+
+            //Console.WriteLine("Write a program that reads from the console number N and print the sum of the first N members of the Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, …");
+
+
+            //string value;
+
+            //Console.Write("Enter integer: ");
+            //value = Console.ReadLine();
+
+            //int number = Convert.ToInt32(value);
+
+
+            //int a = 0;
+            //    int b = 1;
+            //    // In N steps compute Fibonacci sequence iteratively.
+            //    for (int i = 0; i < number; i++)
+            //    {
+            //        int temp = a;
+            //        a = b;
+            //        b = temp + b;
+            //    }
+
+            //Console.WriteLine("a = {0}", a);
+
+
+            //Console.WriteLine("Write a program that calculates N!/K! for given N and K (1<K<N).");
+
+            //// N
+            //string value1;
+
+            //Console.Write("Enter integer: ");
+            //value1 = Console.ReadLine();
+
+            //int number1 = Convert.ToInt32(value1);
+
+
+            //// K
+            //string value2;
+
+            //Console.Write("Enter integer: ");
+            //value2 = Console.ReadLine();
+
+            //int number2 = Convert.ToInt32(value2);
+
+
+            //// Factorial for N - number1
+            //int result1 = number1;
+            //for (int i = number1; i > 1; i--)
+            //{
+            //    result1 = result1 * (i - 1);
+            //}
+            //Console.WriteLine("numerator  = {0}", result1);
+
+
+            //// Factorial for K - number2
+            //int result2 = number2;
+            //for (int i = number2; i > 1; i--)
+            //{
+            //    result2 = result2 * (i - 1);
+            //}
+            //Console.WriteLine("denominator = {0}", result2);
+
+            //// division
+            //int finalResult = (result1 / result2);
+
+            //Console.WriteLine("Result = {0} ", finalResult);
+
+
+
+            //Console.WriteLine("Write a program that calculates N!*K!/(N-K)! for given N and K (1 < K < N).");
+
+            //// N
+            //string value1;
+
+            //Console.Write("Enter integer: ");
+            //value1 = Console.ReadLine();
+
+            //int number1 = Convert.ToInt32(value1);
+
+
+            //// K
+            //string value2;
+
+            //Console.Write("Enter integer: ");
+            //value2 = Console.ReadLine();
+
+            //int number2 = Convert.ToInt32(value2);
+
+
+            //// Factorial for N - number1
+            //int result1 = number1;
+            //for (int i = number1; i > 1; i--)
+            //{
+            //    result1 = result1 * (i - 1);
+            //}
+            //Console.WriteLine("result1  = {0}", result1);
+
+
+            //// Factorial for K - number2
+            //int result2 = number2;
+            //for (int i = number2; i > 1; i--)
+            //{
+            //    result2 = result2 * (i - 1);
+            //}
+            //Console.WriteLine("result2 = {0}", result2);
+
+
+            //// Division operation
+
+            //int finalResult = (result1 * result2) / (result1 - result2);
+
+            //Console.WriteLine("Final result = {0} ", finalResult);
+
+
+
+
 
 
             //Chapter 7
+            //Console.WriteLine("Write a program, which creates an array of 20 elements of type integer and initializes each of the elements with a value equals to the index of the element multiplied by 5.Print the elements to the console.");
+
+            //int[] array = new int[20];
+            //int result;
+            //for (int i = 0; i < array.Length; i++)
+            //{
+            //    result = i * 5;
+            //    array[i] = result;
+            //    Console.WriteLine(array[i]);
+            //}
+
+
+            // ***************************************************************************************************************************** Need help
+            // Console.WriteLine("Write a program, which reads two arrays from the console and checks whether they are equal(two arrays are equal when they are of equal length and all of their elements, which have the same index, are equal).");
+
+            //string value;
+            //int[] array1;
+
+            //string addArray1;
+            //string addArray2;
+
+            //bool cont = true;
+
+            //bool cont2 = true;
+
+            //while (cont)
+            //{
+            //    Console.WriteLine("Enter value; ");
+            //    value = Console.ReadLine();
+
+            //    // add value to array1
+
+            //    Console.WriteLine("Want to add another value to array 1 ? Y or N");
+            //    addArray1 = Console.ReadLine();
+
+            //    //convert addrray1 to bool
+            //    if  (addArray1 == "Y" )
+            //    {
+            //        cont = true;
+            //    }
+
+
+
+            //    if (addArray1 == "N")
+            //    {
+            //        while (cont2)
+            //        {
+            //            Console.WriteLine("Enter value; ");
+            //            value = Console.ReadLine();
+
+            //            // add value to array 2 - push method
+
+
+            //            Console.WriteLine("Want to add another value to array 2 ? Y or N");
+            //            addArray2 = Console.ReadLine();
+
+            //            //convert addrray1 to bool
+            //            if (addArray2 == "Y")
+            //            {
+            //                cont2 = true;
+            //            }
+
+            //        }
+
+            //        cont = false;
+            //    }
+            //}
+
+            // ***************************************************************************************************************************** Need help
+
+            // Chapter 9
+            //Console.WriteLine("Write a code that by given name prints on the console Hello,  name  ! for example: Hello, Peter!");
+
+            //string nameInput;
+
+            //Console.WriteLine("Enter name: ");
+            //nameInput = Console.ReadLine();
+
+            //greetings(nameInput);
+
+
+            //
+
+            //Console.WriteLine("Create a method GetMax() with two integer (int) parameters, that returns maximal of the two numbers.Write a program that reads three numbers from the console and prints the biggest of them.Use the GetMax() method you just created.Write a test program that validates that the methods works correctly.");
+
+            //int num1;
+            //int num2;
+            //int num3;
+
+            //Console.WriteLine("Enter first number: ");
+            //num1 = int.Parse(Console.ReadLine());
+
+            //Console.WriteLine("Enter second number: ");
+            //num2 = int.Parse(Console.ReadLine());
+
+            //Console.WriteLine("Enter third number: ");
+            //num3 = int.Parse(Console.ReadLine());
+
+
+            //GetMax(num1, num2, num3);
+
+
+
+            //Console.WriteLine("Write a method that returns the English name of the last digit of a given number.Example: for 512 prints two; for 1024 four.");
+
+            //int num;
+
+            //Console.WriteLine("Enter number: ");
+            //num = int.Parse(Console.ReadLine());
+
+            //Console.WriteLine(" the last number is {0}", getLastDigit(num));
+
+
+
+
+            //Console.WriteLine("Write a method that finds how many times certain number can be found in a given array.Write a program to test that the method works correctly.");
+
+            //int[] array = { 1, 1, 5, 2, 3, 3 };
+
+            //Console.WriteLine("The count of the repeated num is {0} ", countNum(array, 3));
+
+
+
+            //Console.WriteLine("Write a method that checks whether an element, from a certain position in an array is greater than its two neighbors.Test whether the method works correctly.");
+
+            //int[] array = { 1, 1, 5, 2, 3, 3 };
+
+            //Console.WriteLine("the number is ==== {0} ", compareNum(array, 3));
+
+
+
+            // TO DELEte ####################################################################
+            //Console.WriteLine("Write a method that prints the digits of a given decimal number in a reversed order.For example 256, must be printed as 652.");
+
+
+            //int integer = 256;
+            //var digits = integer.ToString().Select(t => int.Parse(t.ToString())).ToArray();
+
+            //int arrayLength = digits.Length - 1;
+
+            //int temp;
+            //for (int i = 0; i < arrayLength; i++)
+            //{
+            //    temp = digits[i];
+            //    digits[i] = digits[arrayLength - (i)];
+            //    digits[arrayLength - (i)] = temp;
+            //}
+
+            //foreach (int digit in digits)
+            //{
+            //    Console.Write("{0}", digit);
+            //}
+            // TO DELEte ####################################################################
+
+
+
+
+
+            Console.ReadKey();
+
 
         }
     }

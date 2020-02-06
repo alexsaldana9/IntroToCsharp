@@ -4,3 +4,10 @@ C:\Users\asaldana\Documents\C_sharp_Fundamentals\IntroToCSharp\IntroToCSharp\bin
 C:\Users\asaldana\Documents\C_sharp_Fundamentals\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp.csprojResolveAssemblyReference.cache
 C:\Users\asaldana\Documents\C_sharp_Fundamentals\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp.exe
 C:\Users\asaldana\Documents\C_sharp_Fundamentals\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp.pdb
+C:\Users\asaldana\Documents\tutorials\IntroToCsharp\IntroToCSharp\IntroToCSharp\bin\Debug\IntroToCSharp.exe.config
+C:\Users\asaldana\Documents\tutorials\IntroToCsharp\IntroToCSharp\IntroToCSharp\bin\Debug\IntroToCSharp.exe
+C:\Users\asaldana\Documents\tutorials\IntroToCsharp\IntroToCSharp\IntroToCSharp\bin\Debug\IntroToCSharp.pdb
+C:\Users\asaldana\Documents\tutorials\IntroToCsharp\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp.csprojAssemblyReference.cache
+C:\Users\asaldana\Documents\tutorials\IntroToCsharp\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp.csproj.CoreCompileInputs.cache
+C:\Users\asaldana\Documents\tutorials\IntroToCsharp\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp.exe
+C:\Users\asaldana\Documents\tutorials\IntroToCsharp\IntroToCSharp\IntroToCSharp\obj\Debug\IntroToCSharp.pdb
